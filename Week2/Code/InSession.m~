@@ -1,0 +1,35 @@
+% Week2: Transformations Aerial Robotics
+p = [0, 0.5, 0.25]';
+q = [0.5, 0, 0.5]';
+
+dot(p,q)
+
+%%%%%%%%%%%%
+
+theta1 = -pi/2;
+theta2 = -pi/2;
+zRot = [cos(theta1) -sin(theta1) 1; sin(theta1) cos(theta1) 0; 0 0 1];
+xRot = [1 0 0; 0 cos(theta2) -sin(theta2); 0 sin(theta2) cos(theta2)];
+finalVec = zRot * xRot
+
+theta1 = pi/2;
+theta2 = -pi/2;
+theta3 = pi/2;
+zRot = [cos(theta1) -sin(theta1) 1; sin(theta1) cos(theta1) 0; 0 0 1];
+xRot = [1 0 0; 0 cos(theta2) -sin(theta2); 0 sin(theta2) cos(theta2)]
+yRot = [cos(theta3) 0 -sin(theta3); 0 1 0; sin(theta3) 0 cos(theta3)]
+finalVec = xRot * yRot
+
+theta1 = -pi/2;
+theta2 = -pi/2;
+zRot = [cos(theta1) -sin(theta1) 1; sin(theta1) cos(theta1) 0; 0 0 1];
+xRot = [1 0 0; 0 cos(theta2) -sin(theta2); 0 sin(theta2) cos(theta2)];
+yRot = [cos(theta3) 0 -sin(theta3); 0 1 0; sin(theta3) 0 cos(theta3)];
+finalVec = xRot * yRot
+
+%%%%%%%%%%%%
+
+u=[]
+phi=
+
+rot = eye*cos(phi) + u * u' *(1-cos(phi)) + s
